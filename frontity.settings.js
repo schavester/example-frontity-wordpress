@@ -1,15 +1,15 @@
 const settings = {
-  "name": "frontity-example",
+  "name": "frontity-20-20-theme",
   "state": {
     "frontity": {
-      "url": "https://test.frontity.io",
-      "title": "WordPress Theme Unittest",
-      "description": "Frontity example site using WordPress Theme Unittest posts"
+      "url": "",
+      "title": "Test On Bunker Hill",
+      "description": "WordPress installation for testing On Bunker Hill"
     }
   },
   "packages": [
     {
-      "name": "@frontity/mars-theme",
+      "name": "@frontity/twentytwenty-theme",
       "state": {
         "theme": {
           "menu": [
@@ -18,21 +18,39 @@ const settings = {
               "/"
             ],
             [
-              "Edge Case Category",
-              "/category/edge-case-2/"
+              "Authors",
+              "/authors/"
             ],
             [
-              "Content Tags",
-              "/tag/content-2/"
+              "OUR OTHER TIME TRAVEL BLOGS",
+              "/timetravelblogs/"
             ],
             [
-              "About",
-              "/about/"
+              "SAVE ANGELS FLIGHT",
+              "/saveangelsflight/"
+            ],
+            [
+              "Contact Us",
+              "/contact/"
             ]
           ],
+          colors: {
+        primary: "#E6324B",
+        headerBg: "#ffffff",
+        footerBg: "#ffffff",
+        bodyBg: "#f5efe0"
+      },
+      showSearchInHeader: true,
+      showAllContentOnArchive: false,
+      featuredMedia: {
+        showOnArchive: true,
+        showOnPost: true
+      },
+        autoPreFetch: "hover",
+      fontSets: "us-ascii",
           "featured": {
-            "showOnList": false,
-            "showOnPost": false
+            "showOnList": true,
+            "showOnPost": true
           }
         }
       }
@@ -41,7 +59,7 @@ const settings = {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
-          "api": "https://test.frontity.io/wp-json"
+          "api": "http://bunkerhill.hiddenhistoryblogs.com//wp-json"
         }
       }
     },
